@@ -8,5 +8,5 @@ Regret-log2.py generates the log-log plot for the adversary that plays plays eit
 
 Regret-log3.py generates the log-log plot for the adversary that plays plays the equilibrium strategy for the first T /2 steps and plays the best-response strategy for the next T/2 steps.
 
-new-experiments.py contains the code 100*100 diagonal matrix
+new-experiments.py contains the code 100*100 matrix
 
