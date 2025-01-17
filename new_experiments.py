@@ -70,7 +70,7 @@ def nashalgo(seed):
     print(seed,"ucb")
     rng = np.random.default_rng(seed)
     data1=[]
-    n=100
+    n=20
     B=generate_diagonal_matrix(n)
     V=0
     den=0
@@ -103,7 +103,7 @@ def ouralgo(seed):
     rng = np.random.default_rng(seed)
     print(seed,"our-algo")
     data2=[]
-    n=100
+    n=20
     B=generate_diagonal_matrix(n)
     V=0
     den=0
@@ -147,12 +147,12 @@ def ouralgo(seed):
 # In[40]:
 
 
-# EXP3
+# Hedge
 def hedge(seed):
     print(seed,"hedge")
     rng = np.random.default_rng(seed)
     data3=[]
-    n=100
+    n=20
     B=generate_diagonal_matrix(n)
     V=0
     den=0
@@ -180,7 +180,7 @@ def hedge(seed):
     
 
 if __name__ == '__main__':
-    print("new-7-100-100")
+    print("new-7-20-100")
     with Pool() as pool:
         data1 = pool.map(nashalgo, range(0,100))
         data2 = pool.map(ouralgo, range(0,100))
